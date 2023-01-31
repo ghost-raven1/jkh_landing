@@ -1,0 +1,99 @@
+@import "./index.scss";
+
+.app {
+  background: $soft-peach;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  height: 81px;
+  background: $white;
+  box-shadow: 0 5px 10px rgba(144, 147, 158, 0.1);
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+  &__title {
+    color: $dove-grey;
+  }
+}
+
+.body {
+  background: $white;
+  margin: 25px;
+  height: calc(100vh - 90px);
+  border-radius: 10px;
+}
+
+.services {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    color: $dove-grey;
+  }
+  &__list {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.news {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    color: $dove-grey;
+  }
+  &__list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__link {
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 6px;
+        color: $mirage;
+        background: $white;
+        transition: .3s;
+        font-weight: 500;
+        font-size: 18px;
+        border: 1px solid $grey-border;
+        &:hover {
+            background: $mirage;
+            color: $white;
+        }
+    }
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
